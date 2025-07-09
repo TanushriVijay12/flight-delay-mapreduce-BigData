@@ -47,4 +47,5 @@ Both jobs were deployed on a Hadoop cluster set up on AWS EC2 instances.
 ## Execute
 
 hadoop jar ontimeperf.jar OnTimePerformance /input/flights.csv /output/ontime
+
 hadoop jar taxitime.jar TaxiTimeAnalysis /input/flights.csv /output/taxi
