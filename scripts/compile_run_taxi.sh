@@ -11,8 +11,8 @@ javac -classpath $(hadoop classpath) -d $CLASS_DIR $SRC_FILE
 jar cf $JAR_FILE -C $CLASS_DIR/ .
 
 # Run Hadoop job
-INPUT_PATH="/user/hadoop/input/sample_flights.csv"
-OUTPUT_PATH="/user/hadoop/output/taxi"
+INPUT_PATH="/user/hadoop/flightdata_small/flights_small_cleaned.csv"
+OUTPUT_PATH="/user/hadoop/flightdata_small/taxitime_ouput"
 
 # Remove old output if exists
 hdfs dfs -rm -r -f $OUTPUT_PATH
