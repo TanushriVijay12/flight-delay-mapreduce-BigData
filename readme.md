@@ -55,11 +55,13 @@ hadoop jar taxitime.jar TaxiTimeAnalysis /flightdata_small/flights_small_cleaned
 ### OnTimePerformance
 
 DL  TotalFlights=500, OnTimeFlights=420, OnTimeRate=84.00%
+
 UA  TotalFlights=450, OnTimeFlights=360, OnTimeRate=80.00%
 
 ### TaxiTimeAnalysis
 
 JFK  AvgTaxiTime: 21.3
+
 ORD  AvgTaxiTime: 18.9
 
 ## Challenges Faced
