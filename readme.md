@@ -49,3 +49,34 @@ Both jobs were deployed on a Hadoop cluster set up on AWS EC2 instances.
 hadoop jar ontimeperf.jar OnTimePerformance /flightdata_small/flights_small_cleaned.csv /flightdata_small/ontime_output
 
 hadoop jar taxitime.jar TaxiTimeAnalysis /flightdata_small/flights_small_cleaned.csv /flightdata_small/taxitime_output
+
+## Sample outputs
+
+### OnTimePerformance
+
+DL  TotalFlights=500, OnTimeFlights=420, OnTimeRate=84.00%
+UA  TotalFlights=450, OnTimeFlights=360, OnTimeRate=80.00%
+
+### TaxiTimeAnalysis
+
+JFK  AvgTaxiTime: 21.3
+ORD  AvgTaxiTime: 18.9
+
+## Challenges Faced
+
+- Dataset size (3M records) was too large for basic EC2; used sampling (~50K rows)
+- Missing values in delay and taxi columns required careful cleaning
+- Hadoop required proper output folder handling to avoid overwrite errors
+
+
+## Future Improvements
+
+- Use Apache Spark for faster in-memory processing
+- Analyze full dataset with optimized EC2 clusters
+- Add visualizations with Power BI / Tableau
+
+
+## Author
+
+**Tanushri Vijayakumar**
+tanushri.fall24@gmail.com
