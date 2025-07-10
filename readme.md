@@ -80,5 +80,5 @@ ORD  AvgTaxiTime: 18.9
 
 ## Author
 
-**Tanushri Vijayakumar**
-tanushri.fall24@gmail.com
+- **Tanushri Vijayakumar**
+- tanushri.fall24@gmail.com
